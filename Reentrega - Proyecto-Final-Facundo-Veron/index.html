@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="uritorco, viaje, agencia, vacación, destino, placer, ocio, experiencia, travel, agency, vacation, destination, pleasure, leasure, experience">
+    <meta name="description" content="El sitio web de la agencia de viajes Turismo Uritorco donde podés informarte sobre tus próximas vacaciones">
+    <title>Turismo Uritorco - Inicio - Vacaciones de otro planeta</title>
+    <!-- Vinculación de hoja de estilos -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- Fuente Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Josefin+Sans:wght@400;700&family=Playfair+Display:wght@400;500;700&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./img/logo-color.png">
+    <!-- Vinculando aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Vinculando Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body class="body">
+    <!-- header, main, footer, nav, section -->
+    <header class = "header">
+        <br><br><br><br><br><br>
+       <div id="contenedorProductos" class="row"></div>
+        <h3>Carrito de compras</h3>
+        <h4>Total a Pagar <span id="total"></span></h4>
+        <button class="btn btn-danger m-5" id="verCarrito">Carrito</button>
+            <button class="btn btn-danger m-5" id="vaciarCarrito">Vaciar Carro</button>
+              <button class="btn btn-danger m-5" id="comprar">Comprar</button>
+                    <div id="contenedorCarrito"></div>
+                        <h4>Dolar Hoy</h4>
+                            <div id="divDolar"></div>
+                            <nav class="navbar navbar-expand-sm navbar-dark bg-info fixed-top nav-color">
+                                <div class="container-fluid">
+                              <div class ="logo">
+                             <a href="./index.html">
+                            <img class="logo__imagen" src="./img/logo-color.png" alt="Logo de Turismo Uritorco">
+                        </a>
+                    <div class="logo__texto">
+                        <a href="./index.html"><span class="logo__nombre">TURISMO URITORCO</span></a>
+                        <span class="logo__slogan" id="vacaciones" >Vacaciones de otro planeta</span>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav nav text-dark ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./index.html" aria-current="page" data-bs-toggle="tab"> <a href="./index.html">Inicio</a></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/viajes.html" data-bs-toggle="tab"><a href="./pages/viajes.html">Viajes</a></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/empresa.html" data-bs-toggle="tab"><a href="./pages/empresa.html">Empresa</a></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html" data-bs-toggle="tab"><a href="./pages/contacto.html">Contacto</a></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/faq.html" data-bs-toggle="tab"><a href="./pages/faq.html">Preguntas Frecuentes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main grid_wrapper">
+        <section> <!--banner paradisíaco y bienvenida al usuario-->
+            <div class="bienvenida">
+                <img class="bienvenida__banner grid_element grid_element--banner" src="./img/banner-beach_large.png" alt="Playa paradisíaca"> <!--La idea es hacer este banner de punta a punta-->
+                
+                <div class="bienvenida__texto grid_element grid_element--text1">
+                    <h1 class="bienvenida__slogan">Unas vacaciones de otro planeta</h1>
+                    <h2 class="bienvenida__mensaje">Tenemos las mejores opciones para tu próximo destino</h2>
+                </div>
+            </div>
+
+        </section>
+        <section> <!--Imágenes de destinos que eventualmente tendrán texto encima-->
+            <div class="imagenes_cuadradas_destinos_locales grid_element grid_element--imagenes_cuadradas">
+                <div class="tarjeta_mdp">
+                    <img data-aos="fade-right" class="imagenes_cuadradas_destinos_locales__imagen" src="./img/mdp_cuadrada.png" alt="Playas de Mar del Plata" height="400" width="400">
+                    <!-- <span class="imagenes_cuadradas_destinos_locales__texto">Mar del Plata</span> -->
+                </div>
+                <div class="tarjeta_glaciar">
+                    <img data-aos="fade-right" class="imagenes_cuadradas_destinos_locales__imagen" src="./img/glaciar_cuadrada.png" alt="Glaciar Perito Moreno" height="400" width="400"> 
+                    <!-- <span class="imagenes_cuadradas_destinos_locales__texto">Glaciar Perito Moreno</span> -->
+                </div>
+                <div class="tarjetajujuy">
+                    <img data-aos="fade-right" class="imagenes_cuadradas_destinos_locales__imagen" src="./img/jujuy_cuadrada.png" alt="San Salvador de Jujuy" height="400" width="400">
+                    <!-- <span class="imagenes_cuadradas_destinos_locales__texto">San Salvador de Jujuy</span> -->
+                </div>
+            </div>
+        </section>
+        <section class="travel_planners"> <!--Información sobre travel planners-->
+            <div class="travel_planners_texto grid_element grid_element--travel_planners">
+                <h1 class="travel_planners_texto__titulo">Contamos con <i>Travel Planners</i> que te asesorarán en tu próximo viaje</h1>
+                <p class="travel_planners_texto__contenido">¿Cuáles son los beneficios de optar por el servicio de un travel planner? Muchos. Viajar de la mano de un experto permite organizar y con ello reducir al mínimo la cantidad de tiempo y energía que demanda la planificación de un viaje y, lo que es más importante, disfrutar sin contratiempos sus vacaciones. Hoy la mayoría de las agencias de turismo se dedican a la venta de tours o paquetes y toman al pasajero como un cliente. El pasajero se adapta al paquete y no al revés. Nuestro secreto es adaptar el servicio a los gustos y tiempos de cada pasajero o grupo, de forma dinámica y divertida sin que tengan que pagar de más por cosas que no les interesan</p>
+            </div>
+            <img class="travel_planners_imagen" src="./img/travel_planner.png" alt="Travel Planner" width="240" height="360">
+        </section>
+        <section class="destinos_premium">
+            <h1 class="destinos_premium_titulo grid_element grid_element--text2">Nuestros destinos Premium</h1>
+            <div class="destinos_premium_videos grid_element grid_element--destinos_premium"> <!--Los videos tienen agregados los atributos loop, mute y autoplay en la url-->
+                <!-- Eventualmente me gustaria poder clickear en los videos e ir a un link-->
+                <iframe class="destinos_premium_videos__video" width="420" height="237" src="https://www.youtube.com/embed/Ex2iAyaEElQ?autoplay=1&amp;mute=1&amp;playlist=Ex2iAyaEElQ&amp;loop=1&amp;controls=0&amp;clip=Ugkx6K206BXHPHRHwSdHAUgtWg7C9C1GHXBF&amp;clipt=EAAY3M0D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="destinos_premium_videos__video" width="420" height="237" src="https://www.youtube.com/embed/96sq4aMPB8s?autoplay=1&amp;mute=1&amp;playlist=96sq4aMPB8s&amp;loop=1&amp;controls=0&amp;clip=UgkxgniLoYr2rJ9jiqeD3FvXpaZ4Zix_veCv&amp;clipt=EID3AhjgywY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="destinos_premium_videos__video" width="420" height="237" src="https://www.youtube.com/embed/cKriblqLcUE?autoplay=1&amp;mute=1&amp;playlist=cKriblqLcUE&amp;loop=1&amp;controls=0&amp;clip=Ugkx2faFwhFPjMO1Ia2WTwxTdiC744iF8sUk&amp;clipt=ENzQAhikpQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav class="nav_footer">
+            <div class="nav_footer__links_legales">
+                <ul class = "nav_footer__links_legales__lista">
+                    <li><a href="./pages/terms.html">Términos y Condiciones</a></li>
+                    <li><a href="https://www.argentina.gob.ar/servicio/iniciar-un-reclamo-ante-la-direccion-nacional-de-defensa-del-consumidor-y-arbitraje-del" target="_blank">Defensa del Consumidor</a></li>
+                    <li><a href="https://www.assistcard.com/ar" target="_blank">Programa de Asistencia al Viajero</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="logos_medios_de_pago">
+            <span class="logos_medios_de_pago__texto">Nustros medios de pago</span>
+            <div class="logos_medios_de_pago__imagenes">
+                <img class="logos_medios_de_pago__imagen" src="./img/visa_logo.png" alt="Logo de Visa" width="64" height="20">
+                <img class="logos_medios_de_pago__imagen" src="./img/mastercard_logo.png" alt="Logo de MasterCard" width="60" height="40">
+                <img class="logos_medios_de_pago__imagen" src="./img/amex_logo.png" alt="Logo de AMEX" width="30" height="30">
+                <img class="logos_medios_de_pago__imagen" src="./img/paypal_logo.png" alt="Logo de PayPal" width="30" height="30">
+            </div>
+        </div>
+        <div class="links_redes_sociales">
+            <span class="links_redes_sociales__texto">Comunicate con nosotros</span>
+            <div class="links_redes_sociales__links">
+                <a class="links_redes_sociales__link" href="https://www.facebook.com/" target="_blank"><img src="./img/facebook_logo.png" alt="Logo de Facebook" width="30" height="30"></a>
+                <a class="links_redes_sociales__link" href="https://www.instagram.com/" target="_blank"><img src="./img/instagram_logo.png" alt="Logo de Instagram" width="30" height="30"></a>
+                <a class="links_redes_sociales__link" href="https://twitter.com/" target="_blank"><img src="./img/twitter_logo.png" alt="Logo de Twitter" width="30" height="30"></a>
+                <a class="links_redes_sociales__link" href="https://wa.me/" target="_blank"><img src="./img/whatsapp_logo.png" alt="Logo de WhatsApp" width="30" height="30"></a>
+            </div>
+        </div>
+    </footer>
+    <!--  Vinculando aos JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Vinculando Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="main.js" ></script>
+</body>
+</html>

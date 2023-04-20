@@ -1,0 +1,632 @@
+/* Siempre al inicio para usar las variables por cascada */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.top-nav {
+  display: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: azure;
+}
+
+.footer {
+  background-color: rgba(9, 9, 104, 0.322);
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-shrink: 0vz;
+  margin-top: 40px;
+}
+
+.content_wrapper {
+  flex: 1 0 200px;
+}
+
+/* seccion del header */
+.header .navbar {
+  width: 100%;
+}
+
+.header .nav-item {
+  margin: 25px;
+  text-decoration: none;
+}
+
+.header .nav-item .text-dark {
+  color: black;
+}
+
+.nav-color {
+  background-color: rgba(4, 255, 255, 0.9);
+  opacity: 90%;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo__imagen {
+  height: 100px;
+}
+
+.logo__texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.logo__nombre {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 30px;
+}
+
+.logo__slogan {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+}
+
+.botonera {
+  display: flex;
+  margin-right: 20px;
+}
+
+.botonera__boton {
+  height: 100px;
+  width: 180px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.botonera__boton:hover {
+  height: 100px;
+  width: 180px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #00e6e6;
+  transition: background-color .6s;
+}
+
+.botonera__boton--longtext {
+  height: 100px;
+  width: 220px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.botonera__boton--longtext:hover {
+  height: 100px;
+  width: 220px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #00e6e6;
+  transition: background-color .6s;
+}
+
+.botonera__texto {
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.botonera__texto:hover {
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* seccion del main */
+.main {
+  padding-top: 115px;
+  min-height: 100vh;
+}
+
+.bienvenida {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  align-content: center;
+  /* porque no me centra el div? */
+}
+
+.bienvenida__banner {
+  width: 100%;
+  height: 500px;
+}
+
+.bienvenida__texto {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.bienvenida__slogan {
+  text-transform: uppercase;
+  font-size: 60px;
+}
+
+.bienvenida__mensaje {
+  font-style: italic;
+}
+
+.imagenes_cuadradas_destinos_locales {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.imagenes_cuadradas_destinos_locales {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.imagenes_cuadradas_destinos_locales__imagen {
+  border-radius: 5%;
+}
+
+.imagenes_cuadradas_destinos_locales__imagen {
+  border-radius: 5%;
+}
+
+.travel_planners {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  background-color: rgba(0, 236, 185, 0.164);
+}
+
+.travel_planners {
+  margin: 0px 10px 20px 10px;
+  border-radius: 5px;
+  border-color: black;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.2);
+  display: flex;
+}
+
+.travel_planners_texto__titulo {
+  text-align: justify;
+  margin-bottom: 7px;
+}
+
+.travel_planners_texto__contenido {
+  text-align: justify;
+  font-size: large;
+}
+
+.destinos_premium {
+  margin-top: 40px;
+}
+
+.destinos_premium_titulo {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 35px;
+}
+
+.destinos_premium_videos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.bienvenida__jumbotron {
+  width: 100%;
+  height: 400px;
+}
+
+.bienvenida__jumbotron .mask {
+  width: 100%;
+  height: 300px;
+}
+
+.nav_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav_footer__links_legales {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 15px;
+}
+
+.logos_medios_de_pago {
+  display: flex;
+  flex-direction: column;
+}
+
+.logos_medios_de_pago__imagen {
+  margin: 10px;
+}
+
+.logos_medios_de_pago__imagenes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.logos_medios_de_pago__texto {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.links_redes_sociales {
+  display: flex;
+  flex-direction: column;
+}
+
+.links_redes_sociales__link {
+  margin: 10px;
+}
+
+.links_redes_sociales__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.links_redes_sociales__texto {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* viajes */
+.titulo_viajes {
+  text-align: center;
+  margin-top: 20px;
+  font-style: italic;
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+.tarjeta_destino__descripcion {
+  overflow: auto;
+}
+
+.destinos_nacionales {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.tarjeta_destino {
+  display: flex;
+  margin: 0px 10px 20px 10px;
+  border-radius: 10px;
+  border-color: black;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+  align-content: center;
+  height: 700px;
+  width: 350px;
+}
+
+.tarjeta_destino__nombredestino {
+  text-align: center;
+  margin: 5px 10px 5px;
+}
+
+.tarjeta_destino__imagen {
+  height: 350px;
+  width: 100%;
+}
+
+.tarjeta_destino__descripcion {
+  text-align: justify;
+  padding: 15px;
+  font-size: 14px;
+}
+
+.destinos_internacionales {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* empresa */
+.historia {
+  padding: 30px 20px 30px 20px;
+}
+
+.historia__texto {
+  text-align: justify;
+}
+
+.calidad {
+  padding: 30px 20px 30px 20px;
+}
+
+.calidad__texto {
+  text-align: justify;
+}
+
+/* Contacto */
+.mensaje_comunicate {
+  text-align: center;
+  padding: 30px 20px 30px 20px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.formulario_de_contacto__item {
+  margin: 10px;
+}
+
+.formulario_de_contacto__pregunta {
+  margin-bottom: 5px;
+}
+
+.formulario_de_contacto__texto {
+  font-family: 'Roboto';
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.radioselector {
+  margin-right: 15px;
+}
+
+.formulario_de_contacto__consulta {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+/* faq */
+.faqmain {
+  padding: 30px 20px 30px 20px;
+}
+
+.faqmain__titulo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.faqmain__pregunta {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.faqmain__respuesta {
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.terminosmain {
+  padding: 30px 60px 60px 60px;
+}
+
+.terminosmain__texto {
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.terminosmain__subtitulo {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    min-width: 100vw;
+    width: 1229px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .titulo_viajes {
+    margin-left: 550px;
+    width: auto;
+  }
+  .main .destinos_nacionales {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 330px;
+  }
+  .main .destinos_internacionales {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 330px;
+  }
+  .main_empresa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 200px;
+    margin-right: 300px;
+  }
+  .tarjeta_destino {
+    width: 600px;
+    overflow: auto;
+  }
+  .bienvenida__texto {
+    margin-left: 90px;
+  }
+  .imagenes_cuadradas_destinos_locales {
+    margin-left: 220px;
+  }
+  .travel_planners {
+    margin-left: 280px !important;
+  }
+  .destinos_premium {
+    padding-left: 440px !important;
+  }
+  .bienvenida {
+    width: 1024px;
+    height: auto;
+  }
+  .bienvenida__banner {
+    width: 100%;
+    height: 500px;
+  }
+  .logo__slogan {
+    display: none;
+  }
+  .grid_wrapper {
+    display: grid;
+    grid-template-columns: 100vh;
+    grid-template-rows: repeat(1fr, 8);
+    grid-template-areas: "banner" "text1" "imagenes_cuadradas" "travel_planners" "text2" "destinos_premium";
+  }
+  .grid_element {
+    justify-content: center;
+    width: 100%;
+  }
+  .grid_element--banner {
+    grid-area: banner;
+    width: 120%;
+  }
+  .grid_element--imagenes_cuadradas {
+    grid-area: imagenes_cuadradas;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .grid_element--text1 {
+    grid-area: text1;
+  }
+  .imagenes_cuadradas_destinos_locales__imagen {
+    height: 650px;
+    width: auto;
+  }
+  .grid_element--travel_planners {
+    grid-area: travel_planners;
+  }
+  .travel_planners {
+    width: 90vw;
+    justify-items: center;
+    align-items: center;
+    margin-left: 75px;
+    width: 650px;
+  }
+  .grid_element--text2 {
+    grid-area: text2;
+  }
+  .grid_element--destinos_premium {
+    grid-area: destinos_premium;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .destinos_premium_videos__video {
+    margin-top: 15px;
+  }
+  .nav_footer {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .nav_footer__links_legales {
+    align-content: center;
+    justify-content: center;
+  }
+  .nav_footer__links_legales__lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logos_medios_de_pago {
+    margin-bottom: 30px;
+  }
+  .links_redes_sociales {
+    margin-bottom: 30px;
+  }
+  .main_contacto {
+    display: grid;
+    grid-template-columns: 100vh;
+    grid-template-rows: 150px 1fr;
+    grid-template-areas: "contacto_mensaje" "contacto_formulario";
+    justify-content: center;
+  }
+  .grid_element--mensaje {
+    font-style: italic;
+    grid-area: contacto_mensaje;
+  }
+  .grid_element--formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    grid-area: contacto_formulario;
+  }
+}
+
+@media screen and (max-width: 1024px) and (max-width: 768px) {
+  .travel_planners_texto__contenido {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .travel_planners_texto__contenido {
+    display: none;
+  }
+  .main_contacto {
+    margin-left: 350px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .travel_planners_texto__contenido {
+    display: none;
+  }
+}
+
+/* Siempre al final las media queries */
